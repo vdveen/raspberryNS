@@ -4,7 +4,8 @@
   "description": "An information screen using the NS API designed as a small Raspberry Pi web app.",
   "main": "ns.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ns.js"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
   },
   "homepage": "https://github.com/vdveen/raspberryNS#readme",
   "dependencies": {
+    "dotenv": "^2.0.0",
     "express": "^4.14.0",
     "ns-api": "^2.0.5"
   }
