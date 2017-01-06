@@ -18,13 +18,11 @@ Developed by vdveen. This local web app will fetch departure information from an
 ## Installation guide:
 The app runs on NodeJS and two NPM packages. Some Raspberry Pi's might need node-semver as a dependancy for NodeJS. 
 
-`$ sudo apt-get install nodejs npm node-semver`
-
-`$ npm install express ns-api`
+`$ nam install`
 
 It also requires an API key. This can be obtained from https://www.ns.nl/ews-aanvraagformulier/. 
 
-Open the ns.js file and edit the following in the 'User Configuration' part of the script:
+Copy the `.env-sample` file to `.env` en edit all configuration:
 
 * Add your username and API key after the var username and var password. Make sure they are between quotation marks.
 * [Optionally] Change the station that you want information to be displayed from. 
@@ -36,7 +34,7 @@ How to run: basically, run this file in the terminal using node. CD to the corre
 
 `cd ~/[yourpath]/webapp`
 
-Then, run the ns.js file in Node: `node ns.js`
+Then, run the ns.js file in Node: `npm start`
 
 Then, open any web browser and go to `127.0.0.1:3000`. Alternatively, you can run the command `chromium-browser --kiosk --new-window` to open the web app fullscreen. 
 
