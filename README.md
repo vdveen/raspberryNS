@@ -5,6 +5,16 @@ An information screen using the NS API designed as a small Raspberry Pi web app.
 
 Developed by vdveen. This local web app will fetch departure information from any NS station in the Netherlands and display it realtime in the browser. 
 
+## Features:
+* Responsive web app compatible with all screen resolutions. Designed for the 320x480 Adafruit 3,5" TFT screen.
+* Displays up to ten train departures from any train station in the Netherlands
+* Updates every minute, with a loading bar indicating the next refresh
+* Displays departure time, departure platform, major calling stations and train type
+* Displays delays, changed platforms and non-NS operators flexibly
+* Can highlight trains that go to a specific destination
+* Can 'skip over' trains that depart in the next X amount of minutes
+* Official NS colors used
+
 ## Installation guide:
 The app runs on NodeJS and two NPM packages. Some Raspberry Pi's might need node-semver as a dependancy for NodeJS. 
 `$ sudo apt-get install nodejs npm node-semver`
@@ -19,11 +29,11 @@ It also requires an API key. This can be obtained from https://www.ns.nl/ews-aan
 
 
 How to run: basically, run this file in the terminal using node. CD to the correct folder:
+
 `cd ~/[yourpath]/webapp`
 
-Then, run the ns.js file in Node:
-`.../webapp  node ns.js`
+Then, run the ns.js file in Node: `node ns.js`
 
-Then, open any web browser and go to `127.0.0.1:3000`. 
+Then, open any web browser and go to `127.0.0.1:3000`. Alternatively, you can run the command `chromium-browser --kiosk --new-window` to open the web app fullscreen. 
 
 If you want to have the server run when starting your Raspberry Pi, you can append a line of code to your [rc.local file.](https://www.raspberrypi.org/documentation/linux/usage/rc-local.md) 
