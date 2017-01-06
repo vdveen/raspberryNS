@@ -1,3 +1,5 @@
+# Never commit local environment variables
+.env
 
 # Created by https://www.gitignore.io/api/node
 
