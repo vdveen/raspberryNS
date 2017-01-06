@@ -22,7 +22,9 @@ The app runs on NodeJS and two NPM packages. Some Raspberry Pi's might need node
 
 `$ npm install express ns-api`
 
-It also requires an API key. This can be obtained from https://www.ns.nl/ews-aanvraagformulier/. Open the ns.js file and edit the following in the 'User Configuration' part of the script:
+It also requires an API key. This can be obtained from https://www.ns.nl/ews-aanvraagformulier/. 
+
+Open the ns.js file and edit the following in the 'User Configuration' part of the script:
 
 * Add your username and API key after the var username and var password. Make sure they are between quotation marks.
 * [Optionally] Change the station that you want information to be displayed from. 
