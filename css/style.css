@@ -1,0 +1,112 @@
+body {
+  margin: 0px;
+}
+
+h1 {
+  font-size: 7vw;
+  font-family: 'Istok Web', sans-serif;
+  line-height: 1.4em;
+  -webkit-margin-after: 0;
+  color: #002d72;
+  border-top: 0.75vw solid #002d72;
+  border-left: 0.75vw solid #002d72;
+  padding-left: 3px;
+  padding-left: 1.5vw;
+  padding-top: 3px;
+  padding-top: 1.5vw;
+  margin-left: 8px;
+  margin-left: 2vw;
+  -webkit-margin-before: 2vh;
+}
+
+h2 {
+  font-size: 4.5vw;
+  font-weight: 400;
+  font-family: 'Istok Web', sans-serif;
+  line-height: 1.4em;
+  color: #000;
+  border-left: 0.75vw solid #002d72;
+  padding-left: 3px;
+  padding-left: 2vw;
+  margin-left: 8px;
+  margin-left: 2vw;
+  -webkit-margin-before: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+}
+
+h3 {
+  font-size: 5vw;
+  font-weight: 700;
+  font-family: 'Istok Web', sans-serif;
+  line-height: 1.4em;
+  color: #ba0c2f;
+  border-left: 1.5vw solid #ba0c2f;
+  padding-left: 3px;
+  padding-left: 2vw;
+  margin-left: 8px;
+  margin-left: 2vw;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+
+#topbox {
+  padding-top: 2px;
+  background-color: #002d72;
+}
+
+#station {
+  padding-right: 10px;
+}
+
+#time {
+  padding-left: 10px;
+}
+
+#trein {
+  animation-name: flipover;
+  animation-fill-mode: forwards;
+  animation-duration: 1.5s;
+  overflow = "hidden";
+}
+
+div:nth-child(4){animation-delay: 0.2s;}
+div:nth-child(5){animation-delay: 0.3s;}
+div:nth-child(6){animation-delay: 0.4s;}
+div:nth-child(7){animation-delay: 0.5s;}
+div:nth-child(8){animation-delay: 0.6s;}
+div:nth-child(9){animation-delay: 0.6s;}
+div:nth-child(10){animation-delay: 0.7s;}
+div:nth-child(11){animation-delay: 0.8s;}
+div:nth-child(12){animation-delay: 0.9s;}
+div:nth-child(13){animation-delay: 1s;}
+div:nth-child(14){animation-delay: 1.1s;}
+div:nth-child(15){animation-delay: 1.2s;}
+
+span {
+  font-family: 'Istok Web', sans-serif;
+  -webkit-margin-before: 0;
+  font-size: 5.4vw;
+  color: #fff;
+  animation-name: flipover;
+  animation-delay: 0.1s;
+  animation-duration: 1.5s;
+}
+
+.hr {
+  height: 0px;
+  margin-top: 0.5vw;
+  margin-bottom: 0.5vw;
+  border-bottom: 2vh solid #002d72;
+}
+
+@keyframes flipover {
+  0% {transform: rotateX(90deg);}
+  100% {transform: rotateX(0deg);}
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
