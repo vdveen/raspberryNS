@@ -1,0 +1,31 @@
+{
+  "name": "raspberry-ns",
+  "version": "1.0.0",
+  "description": "An information screen using the NS API designed as a small Raspberry Pi web app.",
+  "main": "ns.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vdveen/raspberryNS.git"
+  },
+  "keywords": [
+    "ns",
+    "raspberry",
+    "screen",
+    "train",
+    "realtime",
+    "viewer"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vdveen/raspberryNS/issues"
+  },
+  "homepage": "https://github.com/vdveen/raspberryNS#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "ns-api": "^2.0.5"
+  }
+}
