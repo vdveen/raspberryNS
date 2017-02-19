@@ -18,7 +18,7 @@ Developed by vdveen. This local web app will fetch departure information from an
 ## Installation guide:
 The app runs on NodeJS and two NPM packages. Some Raspberry Pi's might need node-semver as a dependancy for NodeJS. 
 
-`$ nam install`
+`$ npm install`
 
 It also requires an API key. This can be obtained from https://www.ns.nl/ews-aanvraagformulier/. 
 
